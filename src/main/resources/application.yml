@@ -1,0 +1,29 @@
+spring:
+  # spring.application.name=toy-project-spring-2024-03-25
+  application:
+    name: toy-project-spring-2024-03-25
+#  spring.datasource.username=taeho
+#  spring.datasource.password=chlxogh12@
+#  spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#  spring.datasource.url=jdbc:mysql://localhost:3306/book_spring
+  datasource:
+    url: jdbc:mysql://localhost:3306/toy_project
+    username: taeho
+    password: chlxogh12@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8081
+# 리눅스 터미널에서 랜덤으로 암호 키를 생성한 후 생성된 문자를 키로 넣는다.
+# openssl rand -hex 32
+jwt:
+  secret: "a979ccb49e34fcead49fc360647a608a46c066970243073e0dfd5544cb4c097b"
+
+
+
+
+
